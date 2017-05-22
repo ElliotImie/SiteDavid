@@ -1,0 +1,78 @@
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+.BalooBhaina{
+  font-family: 'Baloo Bhaina', cursive;
+}
+.MontSerrat{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.Candal{
+  font-family: 'Candal', sans-serif;
+}
+.gochi{
+  font-family: 'Gochi Hand', cursive;
+}
+.Bubblegum{
+  font-family: 'Bubblegum Sans', cursive;
+}
+.Cormorant{
+  font-family: 'Cormorant Upright', serif;
+}
+.Montaga{
+  font-family: 'Montaga', serif;
+}
+.Marko{
+  font-family: 'Marko One', serif;
+}
+.Chela{
+  font-family: 'Chela One', cursive;
+}
+
+
+.principale{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.logo img{
+  max-width: 40%;
+}
+
+.principale {
+  padding-top: 5.5rem;
+  background-image: url(../images/bg-center.png);
+  h1{
+    text-transform: uppercase;
+  }
+}
+
+
+.menu{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: $color_bg_menu;
+
+  ul{
+    li{
+      display: inline-block;
+      a{
+        display: inline-block;
+        border-left:  5px solid gray;
+        font-family: 'Chela One', cursive;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color : $color_font_menu;
+        padding: 1.5rem;
+      }
+      &:first-child a{
+        border-left: none;
+      }
+    }
+  }
+}
