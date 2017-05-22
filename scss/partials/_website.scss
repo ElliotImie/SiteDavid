@@ -51,7 +51,6 @@
   }
 }
 
-
 .menu{
   position: fixed;
   width: 100%;
@@ -76,3 +75,49 @@
     }
   }
 }
+
+.titre{
+  text-align: center;
+  h1{
+     @extend .Chela;
+     font-size: 3rem;
+  }
+}
+
+.intro{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .illustration{
+    max-width: 25%;
+    img{max-width: 100%;}
+
+  }
+
+  .presentation{
+    width: 60%;
+    font-size: 1.5rem;
+  }
+}
+
+h2{
+  @extend .Chela;
+  font-size: 2rem,
+}
+
+.cv{
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  .formation{
+    width: 40%;
+  }
+  .experience{
+    width: 40%;
+  }
+}
+
+
+/*
+* PAGE PRESENTATION
+*/

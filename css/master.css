@@ -35,7 +35,7 @@
   font-family: 'Marko One', serif;
 }
 
-.Chela {
+.Chela, .titre h1, h2 {
   font-family: 'Chela One', cursive;
 }
 
@@ -85,6 +85,54 @@
   border-left: none;
 }
 
+.titre {
+  text-align: center;
+}
+
+.titre h1 {
+  font-size: 3rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro .illustration {
+  max-width: 25%;
+}
+
+.intro .illustration img {
+  max-width: 100%;
+}
+
+.intro .presentation {
+  width: 60%;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.cv {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cv .formation {
+  width: 40%;
+}
+
+.cv .experience {
+  width: 40%;
+}
+
+/*
+* PAGE PRESENTATION
+*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
