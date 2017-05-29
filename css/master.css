@@ -23,7 +23,7 @@
   font-family: 'Bubblegum Sans', cursive;
 }
 
-.Cormorant {
+.Cormorant, body {
   font-family: 'Cormorant Upright', serif;
 }
 
@@ -37,6 +37,12 @@
 
 .Chela, .titre h1, h2 {
   font-family: 'Chela One', cursive;
+}
+
+body {
+  background-image: url("../images/19.gif");
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 .principale {
@@ -53,7 +59,6 @@
 
 .principale {
   padding-top: 5.5rem;
-  background-image: url(../images/bg-center.png);
 }
 
 .principale h1 {
@@ -93,10 +98,14 @@
   font-size: 3rem;
 }
 
+/*
+* PAGE PRESENTATION
+*/
 .intro {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #fffff0;
 }
 
 .intro .illustration {
@@ -109,30 +118,38 @@
 
 .intro .presentation {
   width: 60%;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .cv {
   padding-top: 3rem;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
 }
 
-.cv .formation {
-  width: 40%;
+.cv .block-text {
+  width: 90%;
+  background-color: #FFFFF0;
+  padding: 2%;
+  margin-bottom: 3rem;
 }
 
-.cv .experience {
-  width: 40%;
+@media (min-width: 1000px) {
+  .cv {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .cv .block-text {
+    width: 40%;
+  }
 }
 
-/*
-* PAGE PRESENTATION
-*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
